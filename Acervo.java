@@ -1,5 +1,4 @@
 /**
- *
  * Classe catálogo - CRUD - de Alugavel
  * @author João Enrique Cairuga
  * @version 2022-12-30
@@ -17,6 +16,15 @@ public class Acervo {
     public Acervo(){
         this.listaAlugaveis = new ArrayList<>();
         this.alugados = new HashMap<>();
+    }
+
+    //Getters
+    public ArrayList<Alugavel> getListaAlugaveis() {
+        return listaAlugaveis;
+    }
+
+    public HashMap<Alugavel, Integer> getAlugados() {
+        return alugados;
     }
 
     //Create
