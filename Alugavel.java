@@ -1,8 +1,7 @@
 /**
- *
  * Classe de objetos alugáveis - carros
  * @author João Enrique Cairuga
- * @version 2022-12-30
+ * @version 2023-01-02
  */
 public class Alugavel {
 
@@ -74,5 +73,13 @@ public class Alugavel {
     }
     public void setAlugado(boolean alugado) {
         this.alugado = alugado;
+    }
+
+
+    /**
+     * Método que imprime em uma linha os dados de um objeto Alugável
+     */
+    public void imprimeDados(){
+        System.out.println("CÓDIGO: " + Integer.toString(codigo) + ", MODELO: " + modelo + ", PREÇO DIÁRIO: " + Double.toString(precoDiario) + ", PLACA: " + placa + ", ANO: " + Integer.toString(ano) + ", COR: " + cor );
     }
 }

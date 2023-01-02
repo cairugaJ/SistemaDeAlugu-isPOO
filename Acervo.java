@@ -64,7 +64,7 @@ public class Acervo {
      * @param codigo valor a ser buscado no catálogo
      * @return carro de mesmo código ou null caso o carro não esteja no catálogo
      */
-    private Alugavel buscaCodigo(int codigo){
+    public Alugavel buscaCodigo(int codigo){
         for (Alugavel a : listaAlugaveis){
             if( codigo == a.getCodigo()) return a;
         }
