@@ -73,8 +73,6 @@ public class Sistema {
             case 0:
                 System.exit(0); //Encerra a execução
                 break;
-            default:
-                menu(); //Volta para o Menu
 
         }
     }
@@ -217,6 +215,6 @@ public class Sistema {
         else{
             System.out.println("Não foi possível deletar o Alugável");
         }
-
+        menu();
     }
 }
